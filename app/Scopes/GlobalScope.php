@@ -10,6 +10,6 @@ class GlobalScope implements Scope
 {
     public function apply(Builder $builder, Model $model)
     {
-        return $builder->where('id', '>', 5);
+        // return $builder->where('id', '>', 5);
     }
 }

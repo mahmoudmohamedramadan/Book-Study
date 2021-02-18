@@ -2,8 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Contact;
 use App\User;
+use App\Models\Contact;
 
 $factory->define(Contact::class, function () {
     return [
