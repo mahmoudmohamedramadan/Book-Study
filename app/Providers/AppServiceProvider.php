@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Models\Contact;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -48,13 +47,13 @@ class AppServiceProvider extends ServiceProvider
             return '<?php } ?>';
         });*/
 
-        Contact::creating(function() {
-            dump('contact is creating now...');
-        });
+        // Contact::creating(function() {
+        //     dump('contact is creating now...');
+        // });
 
-        Contact::created(function() {
-            dump('contact is created successfully');
-        });
+        // Contact::created(function() {
+        //     dump('contact is created successfully');
+        // });
 
         //AND IN GENERAL VIEW YOU CAN DO IT >> Modelname::eventName()
         // Contact::saved(function() {});
@@ -63,8 +62,15 @@ class AppServiceProvider extends ServiceProvider
         // Contact::updating(function() {});
         // Contact::deleted(function() {});
         // Contact::deleting(function() {});
-        // Contact::restored(function() {});
-        // Contact::restoring(function() {});
+
+        //restoring AND restored METHOD ARE FAMILIER WITH SoftDeletes AND WHEN YOU TRY RESTORE DELETED ROW THESE METHODS WILL TRIGGERE
+        // User::restoring(function() {
+        //     dump('user is restoring now after SoftDeletes');
+        // });
+        // User::restored(function() {
+        //     dump('user is restored successfully');
+        // });
+
         // Contact::retrieved(function() {});
     }
 }

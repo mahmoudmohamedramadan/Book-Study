@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comment;
 use App\User;
+use App\Models\Comment;
 
 class UserCommentsController extends Controller
 {
