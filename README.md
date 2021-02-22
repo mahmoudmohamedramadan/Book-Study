@@ -78,6 +78,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+**to run this project you should install vendor folder using next command**
+`composer install`
+
+**to customize appearance of auth blades run next command**
+`php artisan ui vue --auth`
+
 **Useful Extensions in VSCode 🤙🎉**
 <ul>
 <li>PHP IntelliSense</li>
