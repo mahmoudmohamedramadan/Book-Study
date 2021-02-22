@@ -77,3 +77,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+**Useful Extensions in VSCode 🤙🎉**
+<ul>
+<li>PHP IntelliSense</li>
+<li>PHP Intelephense</li>
+<li>PHP Debug</li>
+<li>Laravel Extension Pack</li>
+<li>Error Lens</li>
+<li>Auto Rename Tag</li>
+</ul>
