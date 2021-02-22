@@ -14,6 +14,7 @@ use App\Models\Post;
 
 class User extends Authenticatable
 {
+    //USING SoftDeletes TRAIT WHEN YOU TRY TO DELETE USER, THE USER DOES NOT DELETE PERMANENTLY AND deleted_at column WILL FILLED
     use Notifiable, SoftDeletes;
 
     /**
@@ -40,7 +41,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $visible = [
-        'id', 'name', 'email', 'contact_id', 'created_at', 'updated_at'
+        'id', 'name', 'email', 'contact_id', 'created_at', 'updated_at', 'deleted_at'
     ];
 
     /**
