@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use App\Http\Collections\DepartmentCollection;
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Collections\DepartmentCollection;
 
 class Department extends Model
 {
