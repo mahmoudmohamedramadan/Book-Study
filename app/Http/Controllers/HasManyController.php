@@ -23,10 +23,10 @@ class HasManyController extends Controller
         //HERE in the toggle method if the given ID is already atteched, it will be detached
         // return $product->categories()->toggle($category);
 
-        //updateExistingPivot PASS THE $category AS FIRST PARAMETER AND ATTRIBUTE WHICH YOU WANT TO UPDATE AS SECOND ONE
-        // return $product->categories()->updateExistingPivot($category, [
-        //     'category_id' => 1000
-        // ]);
+        //updateExistingPivot PASS THE $product AS FIRST PARAMETER AND ATTRIBUTE WHICH YOU WANT TO UPDATE AS SECOND ONE, NOTICE HERE LARAVEL SEARCH IN id OF WHICH YOU PASSED AS FIRST PARAMETER IN PIVOT TABLE THEN EXECUTE FUNCTION, HERE WILL FIND THE RECORD WHICH product_id EQUALS 1 THEN WILL UPDATE category_id
+        return $product->categories()->updateExistingPivot($product, [
+            'category_id' => 2000
+        ]);
 
         //sunc METHOD WILL REMOVE ALL DATA IN PIVOT TABLE AND PUT THE DATA OF $product AND $category
         return $product->categories()->sync($category);
