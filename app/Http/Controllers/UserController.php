@@ -119,7 +119,7 @@ class UserController extends Controller
             'password' => $request->password,
         ]);
 
-        //before embarking user action method, make sure that there is a route visit this controller and method
+        //before embarking use action method, make sure that there is a route visit this controller and method
         // return redirect()->action('UserController@returnAlert');
 
         return redirect()->action([UserController::class, 'returnAlert']); #tuple form
